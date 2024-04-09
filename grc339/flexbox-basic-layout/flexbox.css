@@ -35,7 +35,7 @@ footer {
 
 article {
 	flex: 2 0 25em;
-	margin-right: 20px;
+	margin-right: 2em;
 	flex-wrap: wrap;
 }
 
@@ -46,8 +46,8 @@ aside {
 
 section {
 	background-color: #f0f0f0; 
-	padding: 10px;
-	margin-bottom: 20px;
+	padding: 1em;
+	margin-bottom: 2em;
 }
 
 section a {
