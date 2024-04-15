@@ -34,7 +34,7 @@ section.personal-info ul li {
 
 section.personal-info ul li label {
 	width: 30%; 
-	margin-right: 1em; /* Space between label and input */
+	margin-right: 1em; 
 }
 
 
@@ -73,11 +73,6 @@ textarea {
 	color: #777;
 	}
 
-	/* section.order {
-		display: flex;
-		flex-wrap: wrap;
-	} */
-
 	
 	section.order ul,
 section.method ul {
@@ -108,7 +103,7 @@ section.method ul li {
 		}
 		section.order ul li,
 	section.method ul li {
-		flex: 1 0 100%; /* Full width for list items */
+		flex: 1 0 100%; 
 		margin-bottom: 0.5em;
 	}
 	}
