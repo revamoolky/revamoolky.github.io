@@ -1,0 +1,114 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	
+div.container {
+        max-width: 40em;
+        margin: 1em;
+        padding: 1em;
+}
+
+
+section.personal-info ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+section.personal-info ul li {
+	margin-bottom: 1em;
+	display: flex; /* Arrange label and input horizontally */
+	
+}
+
+section.personal-info ul li label {
+	width: 30%; 
+	margin-right: 1em; /* Space between label and input */
+}
+
+
+/* I have *some* selectors with their declarations in the declaration block. You’ll need more selectors and declaration blocks. */
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 1;
+	/*width: 100%;*/
+	box-sizing: border-box;
+}
+
+
+
+section {
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+	margin-top: 0;
+}
+
+textarea {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;  
+	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #777;
+	}
+
+	/* section.order {
+		display: flex;
+		flex-wrap: wrap;
+	} */
+
+	
+	section.order ul,
+section.method ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+section.order ul li,
+section.method ul li {
+	flex: 1 0 calc(50% - 0.5em); /* Two columns with margin */
+	margin-bottom: 0.5em;
+}
+	
+
+
+
+	@media only screen and (max-width: 40em) {
+		section.personal-info ul li {
+			flex-direction: column;
+		}
+	
+		section.personal-info ul li label {
+			width: auto; 
+			margin-bottom: 0.5em; 
+		}
+		section.order ul li,
+	section.method ul li {
+		flex: 1 0 100%; /* Full width for list items */
+		margin-bottom: 0.5em;
+	}
+	}
