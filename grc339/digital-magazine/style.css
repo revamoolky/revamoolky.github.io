@@ -12,6 +12,10 @@ h1 {
     margin-bottom: 1.5em;
 }
 
+body{
+    background-color: rgb(245, 240, 240);
+}
+
 div.container, div.home-container {
     position: relative;
     min-height: 100vh;
@@ -26,7 +30,7 @@ nav ul {
 }
 
 nav ul li a{
-    color: rgb(68, 99, 135);
+    color: rgb(193, 117, 40);
     font-weight: bold;
     font-family: sans-serif;
     font-size: 1.25em;
@@ -36,8 +40,10 @@ nav ul li a{
 h2 {
 	font-weight: bold;
     font-size: 2.5em;
-    font-family: serif;
-    color: rgb(68, 99, 135);
+    font-family: "roca", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(157, 39, 107);
     
 }
 
@@ -48,8 +54,9 @@ a{
 section.secondarystory h2 {
 	font-weight: bold;
     font-size: 1.5em;
-    font-family: serif;
-    color: rgb(68, 99, 135);
+    font-family: "roca", sans-serif;
+    font-style: normal;
+    color: rgb(157, 39, 107);
 
     
 }
@@ -60,36 +67,41 @@ figure {
 }
 
 p {
-	font-weight: 500em;
+	
     color: #000000; 
     font-family: sans-serif;
     line-height: 1.25em;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     /* padding-bottom: 1.5em; */
     
 }
 
 section.tertiarystory h2 {
-	font-weight: bold;
     font-size: 1.25em;
-    font-family: serif;
-    color: rgb(68, 99, 135);
+    font-family: "roca", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(157, 39, 107);
     padding-top: 0.5em;
 
 }
 
 section.tertiarystory {
-    border-top: 0.1em solid rgb(68, 99, 135);
+    border-top: 0.1em solid rgb(193, 117, 40);
     margin-bottom: 0.5em;
 }
 
 
 aside {
-    background-color: rgb(191, 194, 255);
+    background-color: rgb(229, 212, 153);
     padding: 1rem .5rem;
 }
 
+
 footer {
-    background-color: rgb(93 119 150);
+    background-color:rgb(193, 117, 40);
 }
 
 footer p {
@@ -99,8 +111,9 @@ footer p {
 }
 
 figcaption {
-    font-style: oblique;
-    font-family: sans-serif;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: italic;
     color: rgb(113, 113, 113);
     padding: .5rem 0 1em;
 }
@@ -213,6 +226,9 @@ div.home-container main {
 
     section.secondarystory a h2{
         flex: 0 0 1em;
+        font-family: "roca", sans-serif;
+        font-weight: bold;
+        font-style: normal;
     }
 
     section.secondarystory a p{
