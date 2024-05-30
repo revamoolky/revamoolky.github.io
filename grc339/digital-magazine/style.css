@@ -26,15 +26,18 @@ div.container, div.home-container {
 
 nav ul {
     list-style: none;
-    margin-bottom: 1em;
 }
 
 nav ul li a{
     color: rgb(193, 117, 40);
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-size: 1.25em;
-    
+    margin-right: 0.75em;  
+}
+
+nav ul li a:hover{
+	color: rgb(157, 39, 107);
 }
 
 h2 {
@@ -44,6 +47,16 @@ h2 {
     font-weight: 700;
     font-style: normal;
     color: rgb(157, 39, 107);
+    
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: "roca", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(157, 39, 107);
+    margin-bottom: 0.5em;
     
 }
 
@@ -69,7 +82,6 @@ figure {
 p {
 	
     color: #000000; 
-    font-family: sans-serif;
     line-height: 1.25em;
     font-family: "proxima-nova", sans-serif;
     font-weight: 400;
@@ -96,7 +108,6 @@ section.tertiarystory {
 
 aside {
     background-color: rgb(229, 212, 153);
-    padding: 1rem .5rem;
 }
 
 
@@ -107,8 +118,42 @@ footer {
 footer p {
     color: #fafafa;
     padding: auto;
-    padding-top: .75rem;
+    padding: .75rem;
 }
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+section.gallery img {
+    width: 100%;
+}
+
+section.gallery figure {
+    margin: auto;
+    height: calc(100% - 2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding-top: 0;
+}
+
+section.gallery figcaption {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.25em;
+    color: 000000;
+    padding: .5rem 0 1em;
+}
+
 
 figcaption {
     font-family: "proxima-nova", sans-serif;
@@ -120,7 +165,7 @@ figcaption {
 div.home-container aside {
     background: none;
     padding: 0;
-    margin-top: 0;
+    margin-top: 0.5em;
 }
 
 div.container aside {
@@ -133,6 +178,80 @@ div.home-container main {
     grid-gap: 1em;
 }
 
+form ul {
+    list-style-type: none;
+}
+
+form section.personal-info li {
+    display: grid;
+}
+
+form li {
+    margin: 0.75em 0;
+}
+
+input::placeholder {
+    color: #000000; 
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: normal;
+
+}
+
+.form {
+    display: block;
+    background-color: rgb(246, 244, 238);
+    padding: 1em .1em; 
+    width: 25em; 
+    margin-bottom: 1.25em; 
+    border: 1px solid rgb(51,29,12);
+}
+
+
+button {
+    font-family: Roca, sans-serif;
+    font-style: bold;
+    color: #FAF4EF;
+    font-size: 1em;
+    background-color:rgb(157, 39, 107);
+    width: 7em;
+    height: 3em;
+    border-style: none;
+    margin: 0.75em 0;
+    transition-duration: 0.2s;
+    border-radius: 2px;
+}
+
+section.subscription {
+    min-width: 25em;
+    color: #000000; 
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    font-style: normal;
+}
+
+nav.photos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 0.2em;
+}
+
+nav.photos label {
+    height: 30%;
+    width: 60%;
+}
+
+main {
+        position: relative;
+        overflow: hidden;
+}
+
+
+input {
+    display: none;
+}
 
 @media screen and (min-width: 40em) {
 
@@ -148,6 +267,8 @@ div.home-container main {
         margin: 0 0 1rem 0;
     }
 }
+
+
 
 
 @media only screen and (min-width: 60em) {
