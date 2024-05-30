@@ -254,11 +254,6 @@ main {
         overflow: hidden;
 }
 
-
-input {
-    display: none;
-}
-
 @media screen and (min-width: 40em) {
 
     nav ul li {
