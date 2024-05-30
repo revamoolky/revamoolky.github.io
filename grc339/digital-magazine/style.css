@@ -23,7 +23,7 @@ body{
     background-color: rgb(245, 240, 240);
 }
 
-div.container, div.home-container {
+div.container, div.home-container, div.gallery-container{
     position: relative;
     min-height: 100vh;
     max-width: 40em;
@@ -261,6 +261,7 @@ div.gallery-container input {
 }
 
 
+
 @media screen and (min-width: 40em) {
 
     nav ul li {
@@ -288,7 +289,7 @@ div.gallery-container input {
         grid-gap: 1em;
     }
 
-    div.container{
+    div.container, div.gallery-container{
         max-width: 60em;
         padding: 0 1em;
         display: grid;
