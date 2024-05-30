@@ -256,7 +256,7 @@ main {
     overflow: hidden;
 }
 
-div.container input {
+div.gallery-container input {
     display: none;
 }
 
