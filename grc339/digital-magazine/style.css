@@ -13,6 +13,7 @@ header img{
     height: auto;
 }
 
+
 h1 {
 	width: 8em;
     margin-bottom: 1.5em;
@@ -238,6 +239,7 @@ section.subscription {
     font-style: normal;
 }
 
+
 nav.photos {
     display: grid;
     grid-template-columns: auto;
@@ -250,9 +252,14 @@ nav.photos label {
 }
 
 main {
-        position: relative;
-        overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
+
+div.container input {
+    display: none;
+}
+
 
 @media screen and (min-width: 40em) {
 
