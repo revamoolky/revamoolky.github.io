@@ -144,8 +144,6 @@ section.gallery img {
 }
 
 section.gallery figure {
-    margin: auto;
-    height: calc(100% - 2em);
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
